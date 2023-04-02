@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Devang's Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Devang's Survey Form</h1>
+        <p id="description">Survey form for favorite Movies/TV shows</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Name 
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </label>
+                <label id="email-label" for="email">Email 
+                    <input id="email" type="email" placeholder="Enter you email" required>
+                </label>
+                <label id="number-label" for="number">Age 
+                    <input id="number" type="number" placeholder="Enter your age" min="12" max="80">
+                </label>
+                <label for="dropdown">Gender 
+                    <select id="dropdown">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Prefer not to say</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Review for <br>
+                    <input class="inline" type="radio" name="name" value="1"> Movie
+                    <input class="inline" type="radio" name="name" value="2"> TV Show
+                </label>
+                <label>Name of Movie/TV Show 
+                    <input type="text">
+                </label>
+                <label>What did you like about the movie/show? <br>
+                    <input class="inline" type="checkbox" value="1"> Story
+                    <input class="inline" type="checkbox" value="2"> Character Development
+                    <input class="inline" type="checkbox" value="3"> Direction
+                    <input class="inline" type="checkbox" value="4"> Music
+                </label>
+                <label>Review:
+                    <textarea></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" name="submit">
+        </form>
+    </body>
+</html>
